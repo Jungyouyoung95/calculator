@@ -11,7 +11,7 @@
     <div class="carcurator">
         <form name="forms">
             <input type="text" name="output" readonly>
-            <input type="button" class="clear" value="C" onclick="document.forms.output.value+=''">
+            <input type="button" class="clear" value="C" onclick="document.forms.output.value=''">
             <input type="button" class="operator" value="/" onclick="document.forms.output.value+='/'">
             <input type="button" value="1" onclick="document.forms.output.value+='1'">
             <input type="button" value="2" onclick="document.forms.output.value+='2'">
@@ -27,7 +27,7 @@
             <input type="button" class="operator" value="-" onclick="document.forms.output.value+='-'">
             <input type="button" class="dot" value="." onclick="document.forms.output.value+='.'">
             <input type="button" value="0" onclick="document.forms.output.value+='0'">
-            <input type="button" class="operator result" value="=" onclick="document.forms.output.value+=''">
+            <input type="button" class="operator result" value="=" onclick="document.forms.output.value=eval(document.forms.output.value)">
         </form>
     </div>
 </body>
